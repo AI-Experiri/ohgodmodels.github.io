@@ -1,160 +1,148 @@
-<!-- Part I: Six Observations Worth Addressing -->
-<section id="crises" class="py-24 bg-terminal-surface scroll-mt-20">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section header -->
-        <div class="text-center mb-16">
-            <div
-                class="inline-flex items-center space-x-2 px-3 py-1 bg-terminal-bg border border-terminal-border rounded text-xs text-terminal-dim mb-4"
-            >
-                <span class="text-terminal-green">#</span>
-                <span>Part I</span>
-            </div>
-            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Six Observations Worth Addressing
-            </h2>
-            <p class="text-gray-400 max-w-2xl mx-auto">
-                We're not here to tear down. We're here to build. But building
-                well requires seeing clearly.
-                <br /><br />
-                <span class="text-terminal-green"
-                    >The GPU is consumer-grade. The method isn't.</span
-                >
-            </p>
-        </div>
+<!-- Six observations: flip a card for its sources -->
+<section id="observations" class="wrap">
+    <h2>Six observations</h2>
+    <p class="section-lead">
+        We like AI and want to build it well. These are six things about how
+        it is built today that we think should change.
+    </p>
 
-        <!-- Observation cards grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="deck">
             {% include observations/observation-card.html
             number="1"
+            whatif="OHGOD!! What if a strong model could be trained on a consumer GPU in 24 hours?"
             title="industry.close()"
             icon="building"
             color="red"
-            description="A handful of companies control AI infrastructure while publishing nothing: no architectures, no training data, no failure modes. Concentration enables secrecy. Secrecy protects concentration."
-            stat="41/100"
-            stat_label="Stanford Transparency Index avg score (2025)"
-            story1_url="https://news.ycombinator.com/item?id=41878594"
-            story1_title="OpenAI Plans to Lose $5 Billion This Year"
-            story1_summary="Only deep-pocketed companies can sustain AI"
-            story2_url="https://news.ycombinator.com/item?id=37931180"
-            story2_title="Foundation Model Transparency Index"
-            story2_summary="Stanford ranks AI companies on disclosure. Most fail"
-            story3_url="https://news.ycombinator.com/item?id=40593275"
-            story3_title="U.S. Antitrust Inquiries of Nvidia, Microsoft, OpenAI"
-            story3_summary="DOJ/FTC investigate Big Tech AI market dominance"
-            story4_url="https://news.ycombinator.com/item?id=35154527"
-            story4_title="GPT-4: 0% Architecture Disclosed"
-            story4_summary="Major release with zero technical transparency"
+            description="AI companies share less every year about how their models work. The biggest labs have stopped publishing training data sizes and parameter counts for their largest models."
+            stat="40/100"
+            stat_label="Stanford's score for how much AI companies disclose, down from 58"
+            story1_url="https://news.ycombinator.com/item?id=47758028"
+            story1_title="Stanford AI Index 2026: Insiders vs. Everyone Else"
+            story1_summary="Same report: transparency score fell from 58 to 40"
+            story2_url="https://news.ycombinator.com/item?id=49458161"
+            story2_title="Nvidia Agrees to Acquire Hugging Face for $13B"
+            story2_summary="Top chip supplier buys the main open-model hub"
+            story3_url="https://news.ycombinator.com/item?id=48690101"
+            story3_title="U.S. Government Will Decide Who Gets to Use GPT-5.6"
+            story3_summary="Launch limited to about 20 approved partners"
+            story4_url="https://news.ycombinator.com/item?id=47181211"
+            story4_title="OpenAI Raises $110B at $730B Valuation"
+            story4_summary="Amazon, Nvidia, SoftBank fund record private round"
             %}
 
             {% include observations/observation-card.html
             number="2"
+            whatif="OHGOD!! What if a model trained under a desk could also run at home, on your own electricity?"
             title="planet.burn()"
             icon="lightning"
             color="amber"
-            description="Training large language models consumes extraordinary energy. By 2027, AI could consume 85-134 TWh annually, equivalent to Argentina, Netherlands, or Sweden combined."
-            stat="900k"
-            stat_label="Tons of CO₂ added annually by US AI adoption"
-            story1_url="https://news.ycombinator.com/item?id=45886917"
-            story1_title="AI Adoption in US Adds ~900k Tons CO₂ Annually"
-            story1_summary="2025 study finds significant carbon impact"
-            story2_url="https://news.ycombinator.com/item?id=41689443"
-            story2_title="Three New York Cities' Worth of Power: AI Is Stressing the Grid"
-            story2_summary="AI data centers demanding massive power capacity"
-            story3_url="https://news.ycombinator.com/item?id=42851607"
-            story3_title="AI, but at What Cost? Carbon Footprint Breakdown"
-            story3_summary="Training 100B parameter model = 30h of 737 flight"
-            story4_url="https://news.ycombinator.com/item?id=40859993"
-            story4_title="Google's Carbon Emissions Surge 50% Due to AI"
-            story4_summary="Data center electricity up 17% in 2024"
+            description="Large language models use a lot of energy. By 2027, AI could use 85-134 TWh a year, about as much as Argentina, the Netherlands, or Sweden."
+            stat="25.7M"
+            stat_label="Tons of CO₂ a year from 400 US data centers (2026)"
+            story1_url="https://news.ycombinator.com/item?id=50520697"
+            story1_title="Just 400 US Data Centers Use More Electricity Than Michigan"
+            story1_summary="Harvard: 25.7M tons CO₂ a year, as much as Denmark"
+            story2_url="https://news.ycombinator.com/item?id=48879950"
+            story2_title="Datacentres Push Big Tech Emissions to a Third of France's"
+            story2_summary="Microsoft, Amazon, Google: 119M tons CO₂e in a year"
+            story3_url="https://news.ycombinator.com/item?id=45886917"
+            story3_title="AI Adoption in US Adds ~900k Tons CO₂ Annually"
+            story3_summary="2025 study finds significant carbon impact"
+            story4_url="https://news.ycombinator.com/item?id=48914683"
+            story4_title="Data Centers Have Hiked Electricity Prices by $23B"
+            story4_summary="PJM monitor ties $23B in costs to data center demand"
             %}
 
             {% include observations/observation-card.html
             number="3"
+            whatif="OHGOD!! What if the model ran on your own device and your data never left it?"
             title="privacy.null()"
             icon="eye"
             color="cyan"
-            description="LLMs are trained on the internet: your posts, your writings, your conversations. Often without asking. Every interaction is a data-sharing operation."
-            stat="€15M"
-            stat_label="Italy fines OpenAI for GDPR violations (2024)"
-            story1_url="https://news.ycombinator.com/item?id=42474925"
-            story1_title="Italy Fines OpenAI €15M After Privacy Probe"
-            story1_summary="GDPR violation: €15M fine for data collection"
-            story2_url="https://news.ycombinator.com/item?id=40302792"
-            story2_title="Stack Overflow Users Deleting Answers After OpenAI Deal"
-            story2_summary="Users protest their content being sold to AI"
-            story3_url="https://news.ycombinator.com/item?id=42549624"
-            story3_title="AI Companies Cause Most Traffic on Forums"
-            story3_summary="4.8M Claude hits, 148k ChatGPT hits in 7 days"
-            story4_url="https://news.ycombinator.com/item?id=35330438"
-            story4_title="Employees Feeding Sensitive Data to ChatGPT"
-            story4_summary="Raising security fears about corporate AI use"
+            description="LLMs are trained on what people post and write online, often without asking. Each chat with a cloud model hands over more of your data."
+            stat="20M"
+            stat_label="ChatGPT conversations demanded in one lawsuit"
+            story1_url="https://news.ycombinator.com/item?id=45900370"
+            story1_title="Fighting the New York Times' Invasion of User Privacy"
+            story1_summary="OpenAI told to hand over 20M user conversations"
+            story2_url="https://news.ycombinator.com/item?id=50363461"
+            story2_title="Tell HN: Gemini Trains on Chat History, Even for Subscribers"
+            story2_summary="Google added a training opt-out two weeks later"
+            story3_url="https://news.ycombinator.com/item?id=46284266"
+            story3_title="8M Users' AI Conversations Sold by 'Privacy' Extensions"
+            story3_summary="Urban VPN add-ons captured chats for a data broker"
+            story4_url="https://news.ycombinator.com/item?id=49752056"
+            story4_title="Microsoft Memo: AI Scraping 'Largest Theft of Labor in History'"
+            story4_summary="2023 internal memo unsealed in the NYT lawsuit"
             %}
 
             {% include observations/observation-card.html
             number="4"
+            whatif="OHGOD!! What if progress depends more on architecture and efficiency than on compute?"
             title="scale.fail()"
             icon="cube"
             color="purple"
-            description="$100B training runs are underway while an 8B model outperforms a 176B giant. The 'bitter lesson' is dying. Efficiency beats scale. Academia is priced out. The compute arms race is a dead end."
-            stat="4.5%"
-            stat_label="of parameters needed for 8B to beat 176B model"
-            story1_url="https://news.ycombinator.com/item?id=46522308"
-            story1_title="On the Slow Death of Scaling"
-            story1_summary="Sara Hooker: scaling alone misses critical shifts"
-            story2_url="https://news.ycombinator.com/item?id=42125888"
-            story2_title="OpenAI, Google, Anthropic Struggling to Build More Advanced AI"
-            story2_summary="Scaling hitting walls across all major labs"
-            story3_url="https://news.ycombinator.com/item?id=42839650"
-            story3_title="Nvidia's $589B DeepSeek Rout"
-            story3_summary="Efficient model triggers massive market shock"
-            story4_url="https://news.ycombinator.com/item?id=15600275"
-            story4_title="'We Can't Compete': Universities Losing AI Scientists"
-            story4_summary="Academia priced out of frontier research"
+            description="About $8T of AI data centers have been announced, while small, cheap models keep matching far larger ones. IBM's CEO says there is no way that spending pays off at today's costs."
+            stat="$8T"
+            stat_label="announced AI data center spend, per IBM's CEO"
+            story1_url="https://news.ycombinator.com/item?id=46124324"
+            story1_title="IBM CEO: 'No Way' AI Data Center Spending Will Pay Off"
+            story1_summary="$8T of capex needs ~$800B a year just for interest"
+            story2_url="https://news.ycombinator.com/item?id=50000488"
+            story2_title="Why Isn't the Industry Freaking Out About DeepSeek 4.1 Flash?"
+            story2_summary="~8B active params beats DeepSeek's own 1.6T model"
+            story3_url="https://news.ycombinator.com/item?id=47732020"
+            story3_title="Small Models Also Found the Vulnerabilities That Mythos Found"
+            story3_summary="8 of 8 small models spot the bug, given the code"
+            story4_url="https://news.ycombinator.com/item?id=49160699"
+            story4_title="AI's Debt Binge Can't Last: Hidden Borrowing Hits $1.65T"
+            story4_summary="Nikkei: off-balance-sheet debt at five tech giants"
             %}
 
             {% include observations/observation-card.html
             number="5"
+            whatif="OHGOD!! What if 'intelligence' is only a label for the parts nobody has examined yet?"
             title="replies.intelligent()"
             icon="brain"
             color="pink"
-            description="In the Middle Ages, the unexplained was God's work. Today, the unexplained is 'intelligence.' We just need to open the box."
-            stat="100%"
-            stat_label="of impressive outputs attributable to known mechanisms"
-            story1_url="https://news.ycombinator.com/item?id=46112640"
-            story1_title="Sycophancy Is the First LLM 'Dark Pattern'"
-            story1_summary="100% of users affected by AI over-agreement"
-            story2_url="https://news.ycombinator.com/item?id=44885398"
-            story2_title="Claude Says 'You're Absolutely Right!' About Everything"
-            story2_summary="LLMs agree even when users are wrong"
-            story3_url="https://news.ycombinator.com/item?id=39499207"
-            story3_title="Hallucination Is Inevitable: Innate LLM Limitation"
-            story3_summary="Mathematical proof that LLMs must hallucinate"
-            story4_url="https://news.ycombinator.com/item?id=38790255"
-            story4_title="NY Times Suit Wants OpenAI to Delete All GPT Instances"
-            story4_summary="Memorization enables copyright infringement claims"
+            description="Unexplained things were once credited to God. Today, unexplained LLM output is credited to 'intelligence'. Looking inside the model gives a better explanation."
+            stat="95.8%"
+            stat_label="of a book reproduced near-verbatim by one model"
+            story1_url="https://news.ycombinator.com/item?id=47123805"
+            story1_title="AIs Can Generate Near-Verbatim Copies of Novels"
+            story1_summary="Jailbroken model reproduced 95.8% of a book"
+            story2_url="https://news.ycombinator.com/item?id=47554773"
+            story2_title="AI Overly Affirms Users Asking for Personal Advice"
+            story2_summary="Stanford study in Science: users can't tell"
+            story3_url="https://news.ycombinator.com/item?id=46720395"
+            story3_title="GPTZero Finds 100 Hallucinations in NeurIPS 2025 Papers"
+            story3_summary="Fake citations got past expert peer review"
+            story4_url="https://news.ycombinator.com/item?id=39499207"
+            story4_title="Hallucination Is Inevitable: Innate LLM Limitation"
+            story4_summary="Mathematical proof that LLMs must hallucinate"
             %}
 
             {% include observations/observation-card.html
             number="6"
-            title="architecture.frozen()"
+            whatif="OHGOD!! What if the next architecture came from a hobbyist GPU and not a billion-dollar lab?"
+            title="architecture.thawing()"
             icon="cube"
             color="orange"
-            description="The Transformer was invented in 2017. Eight years later, it still dominates, despite known limitations and promising alternatives."
-            stat="8 yrs"
-            stat_label="Coauthor now 'sick' of transformers (2025)"
+            description="The Transformer dominated for nine years with few changes. In 2026 that started to shift: looped transformers reached frontier models, and diffusion and world-model approaches drew serious money. So far the new designs come from well-funded labs."
+            stat="9 yrs"
+            stat_label="of Transformer dominance before alternatives arrived"
             story1_url="https://news.ycombinator.com/item?id=45690840"
             story1_title="'Attention Is All You Need' Coauthor 'Sick' of Transformers"
             story1_summary="After 8 years, even creators want alternatives"
-            story2_url="https://news.ycombinator.com/item?id=42768072"
-            story2_title="DeepSeek-R1: Major Open Model Release"
-            story2_summary="New architecture challenges transformer dominance"
-            story3_url="https://news.ycombinator.com/item?id=40077533"
-            story3_title="Meta Llama 3: Same Architecture, More Scale"
-            story3_summary="No major architectural changes from transformer"
-            story4_url="https://news.ycombinator.com/item?id=35504428"
-            story4_title="The LLaMA Effect: Leak Sparked Open Source Alternatives"
-            story4_summary="Open weights enabling architectural experimentation"
+            story2_url="https://news.ycombinator.com/item?id=49627370"
+            story2_title="GPT-6 Astra, Looped Transformers, and Hidden Reasoning"
+            story2_summary="Reported to run the same layers in a loop"
+            story3_url="https://news.ycombinator.com/item?id=47144464"
+            story3_title="Mercury 2: Fast Reasoning LLM Powered by Diffusion"
+            story3_summary="Diffusion instead of token-by-token generation"
+            story4_url="https://news.ycombinator.com/item?id=47320600"
+            story4_title="Yann LeCun Raises $1B to Build World Models"
+            story4_summary="AMI Labs bets on an alternative to LLMs"
             %}
-        </div>
     </div>
 </section>
