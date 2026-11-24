@@ -1,7 +1,7 @@
 # OHGOD Philosophy - Jekyll Configuration
 title: "OHGOD Philosophy"
 version: "0.1"
-description: "One Hobbyist GPU, One Day: Six Observations Worth Addressing"
+description: "One Hobbyist GPU, One Day: six observations about how AI is built today, and an experiment to test them."
 url: "https://ohgodmodels.xyz"
 baseurl: ""
 
